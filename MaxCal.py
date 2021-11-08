@@ -19,14 +19,14 @@ def Change(cash,charge):
     return cash-charge
 
 price = Cost()
-print(f"Good day! To start, The apple costs {price}.")
+print(f"Good day! To start, The apple costs {price} pesos.")
 
 Cash = Values()
 
 max = Max(Cash,price)
 pay = Total(max,price)
 
-print (f"You can buy {max} apples and your change is {Change(Cash,pay)} pesos.")
+print (f"You can buy {max} apples and your change is {Change(Cash,pay):.2f} pesos.")
 
 
 

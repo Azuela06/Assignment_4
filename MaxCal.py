@@ -1,34 +1,17 @@
-# Note:  Still! The defs first, then make your code presentable. (tho idk how)
-
-
-def Cost():
-    apple = int(input("How much is the Apple: "))
-    return apple
+# redoing the program
+# I am lost :<<<<
 
 def Values():
-    cashInhand = int(input("How much money you have: "))
-    return cashInhand
+    val1 = int(input("How much money do you have?: "))
+    val2 = int(input("How much is the apple?: "))
+    apple = val1//val2
+    total = val2*apple
+    return apple, val1-total
 
-def Max(n1,n2):
-    return n1//n2
-
-def Total(number,cost):
-    return number*cost
-
-def Change(cash,charge):
-    return cash-charge
-
-price = Cost()
-print(f"Good day! To start, The apple costs {price} pesos.")
-
-Cash = Values()
-
-max = Max(Cash,price)
-pay = Total(max,price)
-
-print (f"You can buy {max} apples and your change is {Change(Cash,pay):.2f} pesos.")
-
-
-
-
+def Statement(Max,Change):
+    print(f"You can buy {Max} apples and your change is {Change} pesos.")
     
+Max_ , change = Values()
+
+Statement(Max_, change)
+
